@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Div Box Example</title>
+  <style>
+    .div-box {
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+
+    .div-box::before {
+      content: "";
+      width: 0;
+      height: 0px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-bottom: 100px solid black;
+      border-right: 100px solid red;
+    }
+  </style>
+</head>
+<body>
+  <div class="div-box"></div>
+</body>
+</html>
